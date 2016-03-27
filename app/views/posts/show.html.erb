@@ -1,0 +1,61 @@
+<!-- content -->
+
+<div class="container show">
+  <div class="thumbnail">
+
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <%= image_tag @post.picutre %>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <h3><%= @post.title %></h3>
+        <hr/>
+        <p><%= @post.text %></p>
+      </div>
+    </div>
+
+    <!-- Comments -->
+    <div class="row">
+
+      <div class="col-md-12 clearfix">
+        <h2 class="show-comments">Comments</h2>
+        <%= render @post.comments %>
+      </div>
+    </div>
+
+    <!-- Add a comment -->
+    <div class="row">
+      <div class="col-md-12 add-comment">
+        <h2 class="add-comments">Add a comment:</h2>
+        <%= render 'comments/form' %>
+      </div>
+    </div>
+
+
+    <!-- Links -->
+    <div class="row">
+      <hr/>
+      <div class="col-md-offset-1 col-md-10 clearfix bottom-nav">
+        <a href="#" class=""></a>
+        <a class="btn btn-default" href="/posts">Back</a>
+        <div class="pull-right">
+          <a class="btn btn-default" href="<%= edit_post_path(@post) %>">Edit</a>
+          <div class="btn btn-default destroy">
+            <%= link_to 'Destroy', @post,
+                        method: :delete,
+                        data: { confirm: 'Are you sure?' } %>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+  </div>
+</div>
+

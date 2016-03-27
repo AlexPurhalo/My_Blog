@@ -1,0 +1,44 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.show-comments,
+.add-comments {
+  text-align: center;
+  display: block;
+  border-top: 1px solid #eaeaea;
+  height: 50px;
+  line-height: 50px;
+
+}
+
+.show-message {
+  margin-top: 10px;
+}
+.show-author {
+  text-align: right;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.add-comment .btn-primary {
+  width: 120px;
+}
+
+.show .bottom-nav .btn {
+  line-height: 33px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.show .destroy a{
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.show .destroy a:hover{
+  text-decoration: none;
+}

@@ -22,7 +22,7 @@
     vagrant@rails-dev-box:~$ rake db:seed
     vagrant@rails-dev-box:~$ rails s -b 0.0.0.0
 
-
+## Contact me if you have a problem or questions, skype: alexpurhalo, alexpurhalo@gmail.com
 
 
 ## How To Build The Virtual Machine

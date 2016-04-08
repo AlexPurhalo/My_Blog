@@ -1,9 +1,6 @@
 <div class="col-md-offset-1 col-md-10 ">
   <%= form_for([@post, @post.comments.build]) do |f| %>
       <p>
-        <input class="form-control" name="comment[commenter]" id="comment_commenter" type="text" placeholder="Author"/>
-      </p>
-      <p>
         <textarea class="form-control" name="comment[body]" id="comment_body" cols="30" rows="10" placeholder="Comment"></textarea>
       </p>
       <p>

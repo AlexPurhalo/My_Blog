@@ -5,7 +5,8 @@
     </p>
     <br/>
     <p class="show-author">
-      <%= comment.commenter %>
+      <%= current_user.first_name %>
+      <%= current_user.last_name %>
     </p>
     <%= link_to 'Destroy Comment', [comment.post, comment],
                 method: :delete,

@@ -53,3 +53,7 @@ group :production do
 end
 
 gem 'bcrypt-ruby', '3.1.2'
+
+group :development do
+  gem 'sunspot_rails'
+end
